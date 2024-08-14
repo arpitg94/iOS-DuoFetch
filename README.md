@@ -31,8 +31,8 @@ This project demonstrates a complete application setup with a cloud backend usin
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/arpitg94/ios-duofetch/elixir-server.git
-   cd elixir-server
+   git clone https://github.com/arpitg94/iOS-DuoFetch.git
+   cd iOS-DuoFetch/elixir-server
    ```
 
 2. **Build and Run with Docker**
@@ -97,8 +97,8 @@ CMD ["mix", "phx.server"]
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/arpitg94/ios-duofetch/iosApp.git
-   cd iosApp
+   git clone https://github.com/arpitg94/iOS-DuoFetch.git
+   cd iOS-DuoFetch/iosApp
    ```
 
 2. **Open and Build in Xcode**
