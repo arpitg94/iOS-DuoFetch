@@ -28,8 +28,23 @@ class CoreDataStack {
         }
     }
 
+    func fetchPosts() -> [Post] {
+        let fetchRequest: NSFetchRequest<Post> = Post.fetchRequest()
+        do {
+            return try context.fetch(fetchRequest)
+        } catch {
+            print("Failed to fetch posts: \(error)")
+            return []
+        }
+    }
+
     func saveUser(user: User) {
         context.insert(user)
+        saveContext()
+    }
+
+    func savePost(post: Post) {
+        context.insert(post)
         saveContext()
     }
 
